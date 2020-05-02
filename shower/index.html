@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shower Controller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="center-text">Shower Controller</h1>
+    <div>
+        <table>
+            <tr>
+                <td style="width: 1%;">Temperature:</td>
+                <td class="table-fill"><input type="range" id="temperature-selector" min="45" max="120" value="0" style="margin: 0; width: 100%;"></td>
+                <td style="white-space: nowrap; width: 1%;"><span id="final-temperature">?</span></td>
+            </tr>
+            <tr>
+                <td style="width: 1%;">Amount:</td>
+                <td class="table-fill"><input type="range" id="pressure-selector" value="0" style="margin: 0; width: 100%;"></td>
+                <td style="white-space: nowrap; width: 1%;"><span id="pressure">?</span></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <table style="width: 100%;">
+        <tr>
+            <td class="center-text">Hot (120 *F)</td>
+            <td class="center-text">Cold (45 *F)</td>
+        </tr>
+        <tr>
+            <td><div class="water-valve"><img src="hot-water.png" id="hot-water-valve"></div></td>
+            <td><div class="water-valve"><div><img src="cold-water.png" id="cold-water-valve"></div></td>
+        </tr>
+        <tr>
+            <td class="center-text"><span id="hot-water-output">?</span></td>
+            <td class="center-text"><span id="cold-water-output">?</span></td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+<!-- Shower Controller, Demo -->

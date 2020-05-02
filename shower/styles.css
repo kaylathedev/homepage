@@ -1,0 +1,31 @@
+body {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+.water-valve {
+    display: block;
+    height: 125px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 125px;
+}
+.water-valve img {
+    height: 80px;
+    width: 80px;
+}
+.table-fill {
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 100%;
+}
+.table-fill:before, .table-fill:after{
+    content: ' ';
+    display: table;
+}
+.center-text {
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    font-size: 8vw;
+}

@@ -1,0 +1,38 @@
+<style type="text/css">
+@-webkit-keyframes slideup {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% 470px;
+  }
+}
+.cover-parent {
+  display: inline-block;
+  min-height: 100px;
+  min-width: 300px;
+}
+.cover-parent.animated {
+  background: url('lava2.jpg');
+  -webkit-animation-name: slideup;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.cover {
+  height: 470px;
+  width: 1000px;
+}
+</style>
+
+<div class="cover-parent">
+<img src="fire-station1.png" class="cover">
+</div>
+
+<div class="cover-parent">
+<img src="fire-station2.png" class="cover">
+</div>
+
+<div class="cover-parent animated">
+<img src="fire-station2.png" class="cover">
+</div>

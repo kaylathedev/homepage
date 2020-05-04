@@ -156,6 +156,55 @@ a {
 
 .section-header {
   font-weight: bold;
-  font-size: 125%;
+  font-size: 150%;
   text-transform: uppercase;
+}
+
+
+/* Categories */
+
+.category {
+  margin-bottom: 5px;
+}
+
+.category-header {
+  font-weight: bold;
+  font-size: 170%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.category-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-items>div {
+  margin: 15px;
+}
+
+.item-image {
+  width: 128px;
+  height: 128px;
+  background: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 125%;
+}
+
+.item-subtitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.item-body {
+  display: none;
 }

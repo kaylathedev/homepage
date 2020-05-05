@@ -69,16 +69,16 @@ a {
   clip-path: circle();
 }
 
-.header .identifier {
+.identifier {
   margin: 0 auto;
   text-align: center;
 }
 
-.header .identifier .name {
+.name {
   /* Red 500 */
   color: #F44336;
   flex-direction: row;
-  font-size: 4em;
+  font-size: 400%;
   font-weight: 700;
   margin-bottom: 5px;
   letter-spacing: -12px;
@@ -87,7 +87,7 @@ a {
   word-spacing: 16px;
 }
 
-.header .identifier .name span {
+.name span {
   display: inline-block;
   transform-origin: center bottom;
   /* Red 900 */
@@ -183,7 +183,9 @@ a {
 }
 
 .category-items>div {
-  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
 }
 
 .item-image {
@@ -207,4 +209,67 @@ a {
 
 .item-body {
   display: none;
+}
+
+
+/* Thumbnails */
+
+.item-image {
+  border: 1px solid #EF5350;
+  border-radius: 5px;
+}
+
+.image-goodwillfire18 {
+  background-image: url('../img/goodwillfire18-engine-128.jpg');
+}
+
+
+/* Mobile styles */
+
+@media screen and (max-width: 700px) {
+  .name {
+    font-size: 300%;
+  }
+  .corner {
+    padding: 0;
+  }
+  .profile-picture {
+    background-position: 0;
+    background-size: 96px;
+    width: 96px;
+    height: 96px;
+  }
+  .left-sidebar {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page {
+    display: block;
+  }
+  .page>div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .corner {
+    display: none;
+  }
+  .profile-picture {
+    /* Helps to prevent loading unncessary images on mobile devices */
+    background-image: none;
+  }
+  .left-sidebar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .category-items>div {
+    font-size: 80%;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .item-image {
+    width: 96px;
+    height: 96px;
+  }
 }

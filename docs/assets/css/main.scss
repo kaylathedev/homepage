@@ -1,3 +1,7 @@
+---
+# test
+---
+
 html,
 body {
   margin: 0;
@@ -30,6 +34,18 @@ a {
   margin: 0 auto;
   min-height: 100%;
 }
+.page.no-sidebar {
+  grid-template-columns: auto;
+  grid-template-rows: min-content;
+}
+
+.back {
+  position: absolute;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #EF5350;
+  text-transform: uppercase;
+}
 
 .page .dark {
   color: #FFEBEE;
@@ -46,7 +62,7 @@ a {
   align-items: center;
   background: #FFFDE7;
   display: flex;
-  padding: 0 12px;
+  padding: 4px 12px;
 }
 
 .left-sidebar {
@@ -61,7 +77,7 @@ a {
 }
 
 .profile-picture {
-  background: url('../img/kayla-resume-photo-128.jpg') 0 128px/128px;
+  background: url('/assets/img/kayla-resume-photo-128.jpg') 0 128px/128px;
   display: inline-block;
   margin: 20px;
   width: 128px;
@@ -70,7 +86,8 @@ a {
 }
 
 .identifier {
-  margin: 0 auto;
+  /* Centers horizontally and vertically */
+  margin: auto;
   text-align: center;
 }
 
@@ -81,6 +98,7 @@ a {
   font-size: 400%;
   font-weight: 700;
   margin-bottom: 5px;
+  margin-top: 10px;
   letter-spacing: -12px;
   text-align: center;
   vertical-align: middle;
@@ -142,7 +160,8 @@ a {
 .job {
   display: flex;
   flex-direction: column;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -182,7 +201,8 @@ a {
   margin-right: auto;
 }
 
-.category-items>div {
+.category-items>* {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
@@ -220,7 +240,7 @@ a {
 }
 
 .image-goodwillfire18 {
-  background-image: url('../img/goodwillfire18-engine-128.jpg');
+  background-image: url('/assets/img/goodwillfire18-engine-128.jpg');
 }
 
 
@@ -239,6 +259,14 @@ a {
     width: 96px;
     height: 96px;
   }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .back {
+    margin-top: 15px;
+    position: relative;
+  }
   .left-sidebar {
     font-size: 85%;
   }
@@ -248,7 +276,7 @@ a {
   .page {
     display: block;
   }
-  .page>div {
+  .page>* {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -263,7 +291,7 @@ a {
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  .category-items>div {
+  .category-items>* {
     font-size: 80%;
     padding-left: 4px;
     padding-right: 4px;

@@ -77,7 +77,7 @@ a {
 }
 
 .profile-picture {
-  background: url('/assets/img/kayla-resume-photo-128.jpg') 0 128px/128px;
+  background: url('https://static.kaylathedev.com/img/kayla-resume-photo-128.jpg') 0 128px/128px;
   display: inline-block;
   margin: 20px;
   width: 128px;
@@ -239,8 +239,20 @@ a {
   border-radius: 5px;
 }
 
-.image-goodwillfire18 {
-  background-image: url('/assets/img/goodwillfire18-engine-128.jpg');
+.image-goodwillfire18-small {
+  background-image: url('https://static.kaylathedev.com/img/goodwillfire18-engine-128.jpg');
+}
+
+.image-easy-homepage-small {
+  background-image: url('https://static.kaylathedev.com/img/easy-homepage-128.jpg');
+}
+
+.image-goodwillfire18-large {
+  background-image: url('https://static.kaylathedev.com/img/goodwillfire18-engine-512.jpg');
+}
+
+.image-easy-homepage-large {
+  background-image: url('https://static.kaylathedev.com/img/easy-homepage-512.jpg');
 }
 
 
